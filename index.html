@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFPMB – Associação dos Funcionários Públicos Municipais do Brasil</title>
+
+  <style>
+    :root{
+      --verde:#1f7a4f;
+      --verde-escuro:#145c3a;
+      --cinza:#f4f6f8;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#fff;
+      color:#1f2937;
+    }
+
+    header{
+      background:linear-gradient(90deg,var(--verde-escuro),var(--verde));
+      color:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,.15);
+    }
+
+    .topo{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:20px;
+    }
+
+    nav a{
+      color:#fff;
+      margin:0 12px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    section{
+      padding:70px 20px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    h2{
+      color:var(--verde-escuro);
+      text-align:center;
+      margin-bottom:40px;
+      font-size:32px;
+    }
+
+    .hero{
+      background:#eef5f1;
+      padding:80px 20px;
+    }
+
+    .hero-container{
+      max-width:1200px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .hero h1{
+      color:var(--verde-escuro);
+      font-size:38px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:var(--verde);
+      color:#fff;
+      padding:14px 28px;
+      border-radius:8px;
+      text-decoration:none;
+      margin-top:20px;
+      font-weight:bold;
+      border:none;
+      cursor:pointer;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:35px;
+      margin-top:50px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.12);
+      overflow:hidden;
+      text-align:center;
+    }
+
+    /* 🔧 AJUSTE ÚNICO DA IMAGEM */
+    .card img{
+      width:100%;
+      height:380px;
+      object-fit:cover;
+      object-position:center top;
+    }
+
+    .card h3{
+      color:var(--verde-escuro);
+      margin:20px 0 10px;
+    }
+
+    .card p{
+      padding:0 20px 30px;
+    }
+
+    .quem-somos-texto{
+      max-width:900px;
+      margin:auto;
+      font-size:17px;
+      line-height:1.7;
+      text-align:justify;
+    }
+
+    form{
+      max-width:600px;
+      margin:auto;
+      background:#fff;
+      padding:30px;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,.12);
+    }
+
+    form input{
+      width:100%;
+      padding:14px;
+      margin-bottom:12px;
+      border-radius:8px;
+      border:1px solid #ccc;
+    }
+
+    footer{
+      background:var(--verde-escuro);
+      color:#fff;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    .whatsapp-float{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      color:#fff;
+      border-radius:10px;
+      padding:16px 22px;
+      font-weight:bold;
+      text-decoration:none;
+      z-index:999999;
+      box-shadow:0 8px 20px rgba(0,0,0,.25);
+    }
+
+    .whatsapp-float:hover{
+      background:#1ebe5d;
+    }
+
+    @media(max-width:900px){
+      .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="topo">
+    <img src="imagens/logo-afpmb.jpg" alt="AFPMB" style="height:80px">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#filiacao">Filiação</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-container">
+    <div>
+      <h1>Valorizando quem faz o serviço público acontecer</h1>
+      <p>
+        A AFPMB atua na defesa, apoio e valorização dos servidores públicos municipais
+        em todo o Brasil.
+      </p>
+      <a class="btn" href="#filiacao">Filiar-se agora</a>
+    </div>
+    <div>
+      <img src="imagens/hero.jpg" style="width:100%;border-radius:20px">
+    </div>
+  </div>
+</section>
+
+<section id="quem-somos">
+  <div class="container">
+    <h2>Quem Somos</h2>
+
+    <div class="quem-somos-texto">
+      <p>
+        A <strong>AFPMB – Associação dos Funcionários Públicos Municipais do Brasil</strong>
+        é uma entidade sem fins lucrativos, de atuação nacional, criada para representar,
+        apoiar e valorizar os servidores públicos municipais.
+      </p>
+
+      <p>
+        Trabalhamos na defesa dos direitos dos associados, oferecendo orientação,
+        assistência jurídica e benefícios voltados à segurança e ao bem-estar
+        profissional.
+      </p>
+
+      <p>
+        Nosso compromisso é fortalecer o servidor público e reconhecer a importância
+        do trabalho que realiza diariamente para a população.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="imagens/pessoa1.jpg">
+        <h3>Compromisso</h3>
+        <p>Servidores dedicados ao atendimento e à segurança da população.</p>
+      </div>
+
+      <div class="card">
+        <img src="imagens/pessoa2.jpg">
+        <h3>Responsabilidade</h3>
+        <p>Profissionais que atuam com ética e responsabilidade no serviço público.</p>
+      </div>
+
+      <div class="card">
+        <img src="imagens/pessoa3.jpg">
+        <h3>Valorização</h3>
+        <p>Pessoas que fazem a diferença todos os dias em suas funções.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="filiacao" style="background:var(--cinza)">
+  <div class="container">
+    <h2>Filiação</h2>
+
+    <div class="quem-somos-texto">
+      <p>
+        A filiação à AFPMB é voluntária e destinada aos servidores públicos municipais
+        de qualquer área de atuação.
+      </p>
+
+      <p>
+        O associado contribui com uma mensalidade equivalente a
+        <strong>7% do salário mínimo vigente</strong>, conforme normas estabelecidas
+        em Estatuto.
+      </p>
+    </div>
+
+    <form action="https://formsubmit.co/afpmbrasil@hotmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nova Filiação AFPMB">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="Nome" placeholder="Nome completo" required>
+      <input type="email" name="Email" placeholder="E-mail" required>
+      <input type="text" name="Cargo" placeholder="Cargo / Função">
+      <input type="text" name="Cidade" placeholder="Cidade / Estado">
+      <input type="tel" name="Telefone" placeholder="Telefone">
+
+      <button class="btn" type="submit">Enviar Filiação</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 AFPMB – Associação dos Funcionários Públicos Municipais do Brasil</p>
+  <p>WhatsApp: (11) 98510-7287 | afpmbrasil@hotmail.com</p>
+</footer>
+
+<a 
+  href="https://wa.me/5511985107287"
+  class="whatsapp-float"
+  target="_blank"
+>
+  Fale Conosco no WhatsApp<br>
+  (11) 98510-7287
+</a>
+
+</body>
+</html>
